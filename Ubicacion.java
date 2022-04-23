@@ -53,9 +53,12 @@ public class Ubicacion {
         int posicion = 0;
         String masSegura = "";
         for(int i=0; i<Principal.ubicaciones.size(); i++){
-            if(Principal.ubicaciones.get(i).getCantidadZombies()<=menosZombies){
+            if(Principal.ubicaciones.get(i).getCantidadZombies()<menosZombies){
                 menosZombies = Principal.ubicaciones.get(i).getCantidadZombies();
                 posicion = i;
+                masSegura = Principal.ubicaciones.get(posicion).toString();
+            }else if(Principal.ubicaciones.get(i).getCantidadZombies()==menosZombies){
+                masSegura = Principal.ubicaciones.get(i).toString();
                 masSegura = masSegura + Principal.ubicaciones.get(posicion).toString();
             }
         }
