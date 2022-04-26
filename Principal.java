@@ -82,7 +82,7 @@ public class Principal{
                     System.out.println("Tipo de sangre: ");
                     String tipoSangre = scan.next();
                     Zombie z1 = new Zombie(nombre,salud,tipoSangre,anioNacimiento,mesNacimiento,diaNacimiento);
-                    zombies.add(z1);
+                    Principal.zombies.add(z1);
                     System.out.println(".........................");
                     System.out.println("......Zombie creado......");
                     System.out.println(".........................\n\n\n");
@@ -133,7 +133,7 @@ public class Principal{
                     int cantidadZombies = scan.nextInt();
                     if(cantidadZombies<0){cantidadZombies=0;}
                     Ubicacion u1 = new Ubicacion(nombreCiudad,distanciaAlexandria,cantidadZombies);
-                    ubicaciones.add(u1);
+                    Principal.ubicaciones.add(u1);
                     System.out.println("..........................");
                     System.out.println("....Ubicación guardada....");
                     System.out.println("..........................\n\n\n");
